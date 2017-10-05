@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDark"
+    tools:context="com.saik0116algonquinlive.hilo_game.MainActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/user_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/your_guess"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorTextLight"
+        android:textColorHint="@color/colorTextDark"
+        android:layout_marginTop="41dp"
+        android:textSize="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <Button
+        android:id="@+id/rollBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryLight"
+        android:text="Roll"
+        android:textColor="@color/primary"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="26dp"
+        android:layout_below="@+id/user_guess"
+        android:layout_alignStart="@+id/user_guess" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryLight"
+        android:text="Reset"
+        android:textColor="@color/primary"
+        android:layout_above="@+id/textView2"
+        android:layout_alignEnd="@+id/user_guess"
+        android:layout_marginEnd="26dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@mipmap/dukee"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Duke will be your opponent"
+        android:textColor="@color/colorTextDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/amountLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/colorTextLight"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignStart="@+id/user_guess"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginStart="11dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="You must guess the random number generated from 1-1000 within 10 attempts."
+        android:textColor="@color/primaryLight"
+        android:textSize="18sp" />
+
+
+</android.widget.RelativeLayout>
